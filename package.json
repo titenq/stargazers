@@ -1,0 +1,54 @@
+{
+  "name": "@titenq/stargazers",
+  "version": "1.0.0",
+  "description": "CLI to automatically add a GitHub stargazers section to your project's README. Fetches and displays stargazers' avatars from your repository in an elegant and organized way.",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "bin": {
+      "stargazers": "bin/cli.js"
+    },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "github",
+    "stargazers",
+    "readme",
+    "cli",
+    "automation",
+    "documentation",
+    "github-api",
+    "git",
+    "stars",
+    "repository",
+    "project-documentation"
+  ],
+  "author": "TitenQ <titenq@gmail.com> (https://github.com/titenq)",
+  "homepage": "https://github.com/titenq/stargazers#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titenq/stargazers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/titenq/stargazers/issues"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "inquirer": "^12.9.3"
+  }
+}
